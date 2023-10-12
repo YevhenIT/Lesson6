@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let num
+        // for (let num = 1; num <= 15; num++) {
+        //     document.write('Sorry')
+        // }
+        // document.write(`num = ${num}`)
+        //_________________________________________________________________________________
+
+        // for (let i = 0; i < 100; i++) {
+        //     document.write(`<br> Word`)
+        // }
+
+        //_________________________________________________________________________________
+        // for (let i = 0; i < 5; i++) {
+        //     let num1 = parseInt(prompt("Num1="))
+        //     let num2 = parseInt(prompt("Num2="))
+        //     if (num1 === num2) {
+        //         document.write(`Sum=${num1 + num2}`)
+        //     }
+        //     else {
+        //         let product = num1 * num2
+        //         document.write(`Prod=${product}`)
+        //     }
+        // }
+
+        //_________________________________________________________________________________
+        // let guessedCount = 0
+        // for (let i = 0; i < 6; i++) {
+        //     let compNum = 1 + Math.floor(Math.random() * 10)
+        //     let userNum = parseInt(prompt("Введіть число (від 1 до 10)"))
+        //     if (userNum === compNum) {
+        //         guessedCount++
+        //     }
+        //     document.write(`User: ${userNum},  Comp:${compNum} <br>`)
+        // }
+
+        // //_________________________________________________________________________________
+        // //Поступово вводиться вартості 7 товарів. Знайти загальну вартість
+        // let sum = 0
+        // for (let i = 0; i < 7; i++) {
+        //     const productPrice = parseFloat(prompt('Pruct price'))
+        //     sum += productPrice
+        // }
+        // document.write(`Total = ${sum}`)
+
+        // //_________________________________________________________________________________
+        // //Поступово вводиться вартості 7 товарів із зазначенням номера товару. Знайти загальну вартість
+        // let sum = 0
+        // for (let i = 0; i < 7; i++) {  // abo (let i = 1; i <= 7; i++)
+        //     const productPrice = parseFloat(prompt(`Product ${i + 1} price`))  // abo (`Product ${i} price`)
+        //     sum += productPrice
+        // }
+        // document.write(`Total = ${sum}`)
+
+        // //_________________________________________________________________________________
+        // //Знадача. Вивести номер місяца другого півріччя (номери місяців від 6 до 12)
+        // for (let month = 7; month < - 12; month++) {
+        //     document.write(`<div> Місяц ${month} </div>`)
+        // }
+
+        // //_________________________________________________________________________________
+        // //Задача. Вивести суми сплаченого кредиту. Початковий внесок 5000грн, кінцевий 15000, а щомісячний внесок 2000грн
+        // for (let creditValue = 5000; creditValue <= 15000; creditValue += 2000)
+        //     document.write(`<div> Місяц ${creditValue} </div>`)
+
+        //_________________________________________________________________________________
+        // let total = 0
+        // for (let weekNum = 1; weekNum <= 3; weekNum++) {
+        //     for (let dayNum = 1; dayNum <= 3; dayNum++) {
+        //         const income = parseFloat(prompt(`Тиждень ${weekNum}    дeнь ${dayNum}`))
+        //         total += income
+        //     }
+        // }
+        // document.write(`Total ${total}`)
+
+        //_________________________________________________________________________________
+        // let correctAnswersNumber = 0
+        // for (let num = 0; num <= 4; num++) {
+        //     const element = array[num];
+        //     const num1 = 1 + Math.floor(Math.random() * 9)
+        //     const num2 = 1 + Math.floor(Math.random() * 9)
+        //     const userAnswer = parseInt(prompt(`${num1} * ${num2} = `))
+        //     correctAnswer === num1 * num2
+        //     if (userAnswer === correctAnswer) {
+        //         alert('Ok')
+        //         correctAnswersNumber++
+        //     }
+        //     else
+        //         alert('Erro. Correct: ${num1*num2}')
+
+        // }
+        // alert('correctAnswersNumber')
+
+        //_________________________________________________________________________________
+        //Вводить початкову кількість булочок, які треба продати. Поки залишаються булочки продавати їх клієнтам
+        // let bunsNumber = parseInt(prompt('Початкова кількість булочек'))
+
+        // while (bunsNumber > 0) {
+        //     const clientsBunsNumber = parseInt(prompt('Скількі ви хочете булочек?'))
+        //     if (clientsBunsNumber <= bunsNumber) {
+        //         alert('Заберіть булочки')
+        //         bunsNumber -= clientsBunsNumber
+        //     }
+        //     else
+        //         alert('немає такої кількості')
+        // }
+        // alert('товар продан')
+
+        //_________________________________________________________________________________
+        //З клавиатури вводиться два числа N i M (N<M). Вивести на екран числа
+        //N---M
+        //N+1 --- M-1
+        //N+2 --- M-2
+        //N+3 --- M-3
+        // let N = 2, M = 7
+        // while (N < M) {
+        //     document.write(`${N} - ${M} <br>`)
+        //     N++
+        //     M--
+        // }
+
+        //_________________________________________________________________________________
+        //З клавіатури вводиться поступово двоцифрові числа. Знаходимо їх добуток поки не буде введено 0.
+        // let product = 1
+        // let userNumber = 1
+        // do {
+        //     product *= userNumber
+        //     userNumber = parseInt(prompt('Введіть число'))
+        // } while (userNumber !== 0);
+        // document.write(`Product = ${product}`)
+
+        //_________________________________________________________________________________
+        // Оператор break
+        // Поступово вводити 10 цілих чисел і знайти їх суму. Якщо буде введено некоректне число, то припинити знаходження суми
+        // let sum = 0
+        // for (let i = 0; i < 10; i++) {
+        //     let num = parseInt(prompt('Number = '))
+        //     if (!isFinite(num))  //Якщо заначення некоректне - припинити
+        //         break;
+        //     sum += num
+        // }
+        // document.write(`Sum = ${sum}`)
+
+        //_________________________________________________________________________________
+        //Приклад. 3 рази дати можливість ввести пароль (правильний пароль <<123>>)
+        // let isLoggedIn = false
+        // for (let i = 0; i < 3; i++) {
+        //     //ввести пароль
+        //     const password = prompt('Введіть парполь')
+        //     //Якщо правильний, то припинити введення
+        //     if (password === '123') {
+        //         isLoggedIn = true
+        //         break;
+        //     }
+        // }
+
+        // if (isLoggedIn)
+        //     alert('Вітаю')
+        // else
+        //     alert('У доступі відмовлено')
+
+        //_________________________________________________________________________________
+        //Дано 3 сайти, на яких користувач хоче купити по 2 товари. Але якщо гроші закінчились, то зрозумло, що припиняється
+        // let userMoney = parseFloat(prompt('Почткова кількість грошей користувача'))
+        // sitesLabel: for (let sistesNum = 1; sistesNum <= 3; sistesNum++) {
+        //     for (let productNum = 1; productNum <= 2; productNum++) {
+        //         const productPrice = parseFloat(prompt(`Site :${sistesNum}, product num : ${productNum}`))
+        //         if (productPrice <= userMoney) {
+        //             alert('Товар куплено')
+        //             userMoney -= productPrice
+        //         }
+        //         if (userMoney === 0)
+        //             break sitesLabel
+        //     }
+        // }
+
+        //_________________________________________________________________________________
+        //Знайти найбільщі 2 числа з 4-х цілих чисел
+        // const num1 = parseInt(prompt('Num1'))
+        // const num2 = parseInt(prompt('Num2'))
+        // const num3 = parseInt(prompt('Num3'))
+        // const num4 = parseInt(prompt('Num4'))
+        // let max1, max2
+        // //max1>=max2
+        // if (num1 > num2) {
+        //     max1 = num1
+        //     max2 = num2
+        // }
+        // else {
+        //     max1 = num2
+        //     max2 = num1
+        // }
+
+        // if (num3 > num1) {
+        //     max2 = max1
+        //     max1 = num3
+        // }
+        // else if (num3 > max2) max2 = num3
+
+        // if (num4 > max1) {
+        //     max2 = max1
+        //     max1 = num4
+        // }
+        // else if (num4 > max2) max2 = num4
+        // document.write(`max1 = ${max1} , max2 = ${max2}`)
+
+        //--------------------------------------------------------------------------------------
+        // document.write('<table border="2px">')
+        // for (let i = 0; i = 10; i++) {
+        //     document.write('<tr>')
+        //     for (let j = 0; j < 10; j++) {
+        //         document.write(`<td> ... </td>`)
+        //     }
+        //     document.write('</tr>')
+        // }
+        // document.write('</table>')
+
+        //--------------------------------------------------------------------------------------
+        //Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами
+        //Крок 0.
+        // minRangeNumber
+        // maxRangeNumber
+        // sum
+        // const minRangeNumber = parseInt(prompt('minRangeNumber'))
+        // const maxRangeNumber = parseInt(prompt('maxRangeNumber'))
+
+        // let sum = 0
+
+        // for (let i = 0; i < 5;) {
+        //     const randomNum = minRangeNumber + Math.floor(Math.random() * (maxRangeNumber - minRangeNumber + 1))
+
+        //     if (randomNum % 2 !== 0) {
+        //         sum += randomNum
+        //         i++
+        //     }
+        // }
+        // document.write(` Sum=${sum}`)
+
+        //--------------------------------------------------------------------------------------
+        // Поступово генеруються N чисел. Знайти максимальне, мінімальне та середнє значення
+        //maxNum
+        //minNum
+        //numbersCount
+        //average
+        //sum
+        // const numbersCount = parseInt(prompt('Кількість чисел'))
+        // let sum = 0
+        // let maxNum = -Infinity
+        // let minNum = +Infinity
+        // for (let i = 0; i < numbersCount; i++) {
+        //     const randomNum = minRangeNumber + Math.floor(Math.random() * (maxRangeNumber - minRangeNumber + 1))
+
+        //     if (maxNum < randomNum)
+        //         maxNum = randomNum
+
+        //     if (minNum > randomNum)
+        //         minNum = randomNum
+
+        //     sum += randomNum
+        // }
+        // const average = sum / numbersCount
+        // document.write(`Average = ${average}, Max = ${maxNum}, Min = ${minNum}`)
+
+        //--------------------------------------------------------------------------------------
+        // Поступово генерувати 100 виппадкових чисел від 1 до 1000. Підрахувати яких чисел більше: парних чи непарних
+        // evennumber - кулькість напрних
+        // oddNumber - кількість непарних
+        // const minNum = 1
+        // const maxNum = 1000
+        // let evenNumber = 0
+        // let oddNumber = 0
+        // for (let i = 0; i < 1000; i++) {
+        //     const randomNum = minNum + Math.floor(Math.random() * (maxNum - minNum + 1))
+        //     if (randomNum % 2 === 0) evenNumber++
+        //     else oddNumber++
+        // }
+        // document.write(`oddNumber = ${oddNumber}, evenNumber = ${evenNumber} `)
+
+        //--------------------------------------------------------------------------------------
+        // Вивести високосні роки у вказаому діапазоні (між початковим і кінцевим роками)
+        // високосний - він кратний 4, але не кратний 100, а також якщо він кратний 400
+        // startYear
+        // endYear
+        // const startYear = parseInt(prompt('Початковий рік'))
+        // const endYear = parseInt(prompt('Кінцевий рік'))
+
+        // for (let year = startYear; year < endYear; year++){
+        //     if (year%4 === 0 && year%100 !==0 || year%400 ===0)
+        //     document.write(``)
+        // }
+
+        //--------------------------------------------------------------------------------------
+        // Вивести усі трицифрові числа, де друга цифра завжди є меншою за першу, а третя є меншою або рівною за другу. 100 - 999
+        // for (let c1 = 1; c1 <= 9; c1++) {
+        //     for (let c2 = 0; c2 <= c1; c2++) {
+        //         for (let c3 = 0; c3 <= c2; c3++) {
+        //             document.write(`${c1} ${c2} ${c3} <br>`)
+        //         }
+        //     }
+        // }
+
+        //--------------------------------------------------------------------------------------
+        //Вивксти з кожного десятка (1-10, 11-20, 21-30, ... 91-100) по 3 випадкових парних числа
+        // rageStart
+        // rangeEnd
+        // for (let rageStart = 1, rangeEnd = 10; rangeEnd <= 100; rageStart += 10, rangeEnd += 10) {
+
+        //     for (let i = 0; i < 3;) {
+        //         const randomNum = rageStart + Math.floor(Math.random() * (rangeEnd - rageStart + 1))
+        //         if (randomNum % 2 === 0) {
+        //             document.write(`${randomNum} <br>`)
+        //             i++
+        //         }
+        //     }
+        // }
+
+        //--------------------------------------------------------------------------------------
+        // Вивести 5 маркових списків по 3 випадкових числа
+        // const rageStart = 1, rangeEnd = 100
+        // for (let i = 0; i < 5; i++) {
+        //     document.write('<ul>')
+
+        //     for (let j = 0; j < 5; j++) {
+        //         const randomNum = rageStart + Math.floor(Math.random() * (rangeEnd - rageStart + 1))
+        //         document.write(`<li>${randomNum}</li>`)
+        //     }
+        //     document.write('</ul>')
+
+        //}
+
+        //--------------------------------------------------------------------------------------
+        //Вивести 4 двовимірні таблиці 5*6
+        // const rangeStart = 1, rangeEnd = 100
+        // for (let tableNumber = 0; tableNumber < 4; tableNumber++) {
+        //     document.write('<table border"2x">')
+        //     for (let rowNum = 0; rowNum < 5; rowNum++) {
+        //         document.write('<tr>')
+        //         for (let cellNumber = 0; cellNumber < 6; cellNumber++) {
+        //             const randomNum = rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //             document.write(`<td>${randomNum}</td>`)
+        //         }
+        //         document.write('</tr>')
+        //     }
+        //     document.write('</table>')
+        // }
+
+        //--------------------------------------------------------------------------------------
+        //Вивести діаграму з 8 рандомними значеннями (0-100)
+        // const rangeStart = 0,
+        //     rangeEnd = 100
+        // for (let i = 0; i < 8; i++) {
+        //     const randNum =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+
+        //     document.write(
+        //         `<div style="height:20px; width: ${randNum}%; margin-top: 10px; background-color: red;"></div>`
+        //     )
+        // }
+
+        //--------------------------------------------------------------------------------------
+        //Випадковим чином вивести у рандомних позиціях 10 зображень-смайликів
+        // const rangeStart = 0,
+        //     rangeEnd = 100
+
+        // for (let i = 0; i < 10; i++) {
+        //     const left = rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     const top = rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     document.write(
+        //         `<img src="./img/img1.jpg" style="position:fixed; left: ${left}%; top: ${top}%; width:20px">`
+        //     )
+        // }
+
+        //=====================================================
+        //Вивести радіо-кнопки для визначення того, скільки років людині у діапазоні (1-10, 11-20, 21-30, ... , 91-100)
+        // for (let startNum = 1, endNum = 10; startNum <= 91; startNum += 10, endNum += 10) {
+        //     document.write(`
+        //         <label>
+        //             ${startNum} - ${endNum}
+        //             <input type="radio" name="age"/>
+        //         </label>
+        //         <br>`)
+        // }
+
+        //=====================================================
+        //Сформували select з парними числами від 2 до 20
+        // document.write('<select>')
+        // for (let i = 2; i <= 20; i += 2) {
+        //     document.write(`<option value="${i}">${i}</option>`)
+        // }
+        // document.write('</select>')
+
+        //=====================================================
+        // Користувач вводить два символи у верхньому регістрі. Сформували два select з кодами символів у
+        // заданому діапазоні та символами у заданому діапазоні
+        // const firstLetter = prompt('Перша літера')
+        // const lastLetter = prompt('Друга літера')
+        // // // A - C
+        // const firstLetterCode = firstLetter.charCodeAt(0)
+        // const lastLetterCode = lastLetter.charCodeAt(0)
+        // // // 65
+        // // // 66
+        // // // 67
+        // document.write('<select>')
+        // for (let i = firstLetterCode; i <= lastLetterCode; i++) {
+        //     document.write(`<option value="${i}">${i}</option>`)
+        // }
+        // document.write('</select>')
+        // // // A
+        // // // B
+        // // // C
+        // document.write('<select>')
+        // for (let code = firstLetterCode; code <= lastLetterCode; code++) {
+        //     document.write(
+        //         `<option value="${code}">${String.fromCharCode(code)}</option>`
+        //     )
+        // }
+        // document.write('</select>')
+
+        //=====================================================
+        // Задача 2.  Тільки позитивні емоції. З клавіатури вводиться М - максимальна кількість смайликів, які можна
+        // вивести. Комп’ютер випадково вибирає якесь із 4 наперед заданих. Серед них є сумний смайл.
+        // const smileNumber = parseInt(prompt('Максимальна кількість смайликів'))
+        // const rangeStart = 1,
+        //   rangeEnd = 4
+        // const smileNumber = parseInt(prompt('Максимальна кількість смайликів'))
+        // //1)Якщо знаходимо сумний смайл – зупитини
+        // for (let i = 0; i < smileNumber; i++) {
+        //     const imgNumber =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     if (imgNumber === 4) break //Якщо номер - номер сумного смайла, то припинити
+        //     const imgPath = `./img/${imgNumber}.jpg`
+        //     document.write(`<img src="${imgPath}" style="width:30px"/> `)
+        // }
+        // //*******************
+        // //   2)Якщо знаходимо сумний смайл – пропустити
+        // for (let i = 0; i < smileNumber; i++) {
+        //     const imgNumber =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     if (imgNumber === 4) continue //Якщо номер - номер сумного смайла, то пропустити
+
+        //     const imgPath = `./img/img${imgNumber}.jpg`
+        //     document.write(`<img src="${imgPath}" style="width:30px"/> `)
+        // }
+        // //**************
+        // //   3)Якщо знаходимо сумний смайл – вибрати наступний позитивний
+        // const sadPosition = 4
+        // for (let i = 0; i < smileNumber; i++) {
+        //     let imgNumber =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     if (imgNumber === sadPosition) imgNumber = ((imgNumber - 1 + 1) % 4) + 1
+
+        //     const imgPath = `./img/img${imgNumber}.jpg`
+        //     document.write(`<img src="${imgPath}" style="width:30px"/> `)
+        // }
+
+        //=====================================================
+        // Задача 2. Комп’ютер 3 рази випадковим чином вибирає початок і кінець проміжку (проміжок повинен знаходитися в межах від 1 до 100). Користувач вводить число і виграє, якщо число знаходиться у цьому проміжку, або розташоване від нього (від лівого або правого краю) не більше ніж на 10. ((min-10)   ---  (max+10))
+        // const rangeStart = 1,
+        //     rangeEnd = 100
+        // for (let i = 0; i < 3; i++) {
+        //     let minNum =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     let maxNum =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     // Перевіряємо чи часом minNum > maxNum
+        //     if (minNum > maxNum) {
+        //         let tmp = minNum
+        //         minNum = maxNum
+        //         maxNum = tmp
+        //     }
+        //     const userNum = parseInt(prompt('Ваше число?'))
+        //     // const resultMessage =
+        //     //   userNum >= minNum - 10 && userNum <= maxNum + 10
+        //     //     ? 'Перемога'
+        //     //     : 'Програш'
+
+        //     let resultMessage
+        //     if (userNum >= minNum - 10 && userNum <= maxNum + 10)
+        //         resultMessage = 'Перемога'
+        //     else resultMessage = 'Програш'
+
+        //     alert(resultMessage)
+        // }
+
+        //==============================================================================================
+        // Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M.
+        //Маючи К снарядів користувач намагається потопити корабель
+        // const rowsNumber = parseInt(prompt('Кількість рядків')) //N
+        // const columnsNumber = parseInt(prompt('Кількість стовпців')) //M
+        // let missleNumber = parseInt(prompt('Кількість снарядів')) //K
+
+        // //Випадковим чином розмістили корабель (визначили номер рядка і номер стовпця)
+        // const shipRowPosition = 1 + Math.floor(Math.random() * rowsNumber)
+        // const shipColumnPosition = 1 + Math.floor(Math.random() * columnsNumber)
+
+        // let userRow, userColumn, checkShootResult
+        // do {
+        //     userRow = parseInt(prompt('Номер рядка'))
+        //     userColumn = parseInt(prompt('Номер стовпця'))
+        //     missleNumber--
+        //     checkShootResult =
+        //         userRow === shipRowPosition && userColumn === shipColumnPosition
+        //     if (!checkShootResult)
+        //         alert(`Не попав  ${shipRowPosition}-${shipColumnPosition}`)
+        // } while (!checkShootResult && missleNumber > 0)
+
+        // if (checkShootResult) alert('Перемога')
+        // else alert('Програш')
+
+        //==============================================================================================
+        //Ігровий автомат. Випадково вибираємо зображення у 3 позиціях.
+        // Вибір у кожній позиції вибирається як одне з чотирьох зображень.
+        //   Вивести ці зображення і повідомити виграш користувача
+        //   (три перших зображення 100 грн, три других – 200, три третіх – 500,
+        //    три четвертих зображення – 1000грн).
+        //    Використати цикли і switch (для вибору зображення за номером).  Давайте розглянемо цю також
+        //  1 - 10      10^1        30
+        //  2 - 100     10^2        300
+        //  3 - 1000    10^3        3000
+        //  4 - 10000   10^4        30000
+
+        // const rangeStart = 1,
+        //     rangeEnd = 4
+
+        // let sum = 0
+        // for (let i = 0; i < 3; i++) {
+        //     let imgNum =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+        //     document.write(`<img src="./img/img${imgNum}.jpg" style="width:50px"/>`)
+        //     sum += Math.pow(10, imgNum - 1) //sum +=  10 ^ imgNum-1
+        // }
+        // let money = 0
+        // switch (sum) {
+        //     case 30:
+        //         money = 100
+        //         break
+        //     case 300:
+        //         money = 200
+        //         break
+        //     case 3000:
+        //         money = 500
+        //         break
+        //     case 30000:
+        //         money = 1000
+        //         break
+        // }
+        // document.write(`Виграш = ${money}`)
+
+        //==============================================================================================
+        //Задача 15. Користувача поступово вводить показники температури протягом року. Знайти середню температуру.
+        // let sum = 0
+        // const rangeStart = -20,
+        //     rangeEnd = 20
+        // let minTemperature = +Infinity
+        // let maxTemperature = -Infinity
+        // for (let i = 0; i < 365; i++) {
+        //     let temperature =
+        //         rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+
+        //     sum += temperature
+        //     if (temperature > maxTemperature) maxTemperature = temperature
+        //     if (temperature < minTemperature) minTemperature = temperature
+        // }
+        // const average = sum / 365
+        // document.write(
+        //     `Average = ${average.toFixed(
+        //         3
+        //     )}, max = ${maxTemperature}, min = ${minTemperature}`
+        // )
+    </script>
+
+
+</body>
+
+</html>

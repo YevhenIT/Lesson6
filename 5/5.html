@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 5.Інвестор вклав N тис.грн на 20 років під 20 % річних.
+        //     Визначити за допомогою циклів суму, яку він одержить(без оподаткування).
+        const initialInvestment = parseInt(prompt("Введіть початкову суму вкладу")); // N Початкова сума вкладу в тис. грн
+        const annualInterestRate = 0.20; // Річна процентна ставка (20%)
+        const years = 20; // Кількість років
+
+        let totalAmount = initialInvestment;
+        for (let year = 1; year <= years; year++) {
+            totalAmount += totalAmount * annualInterestRate;
+        }
+        document.write(`Сума після ${years} років: ${totalAmount.toFixed(2)} грн`);
+    </script>
+</body>
+
+</html>
